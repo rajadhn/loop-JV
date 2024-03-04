@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="insta.css">
+    <title>Loop</title>
+</head>
+<body>
+    <img src="c:\Users\dell\Downloads\143shots_so.png" width="100%" alt="">
+    <p id="demo"></p>
+    <script>
+        const person = {fname:"Munna",lname:"Yadav", age:36};
+        let txt = "";
+        for (let x in person) {
+            txt +=person[x] + " ";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+    <p id="demo2"></p>
+
+    <script>
+        const numbers = [30,5,9,15,];
+
+        let txt = "";
+        for (let x in numbers) {
+            txt += numbers[x] + "<br>";
+        }
+        document.getElementById("demo2").innerHTML = txt;
+    </script>
+</body>
+</html>
